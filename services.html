@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services — Vyon Consulting</title>
+  <meta name="description" content="High-fidelity CFD, FEA, Digital Twins and Marine Engineering services from Vyon Consulting.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;1,700&family=JetBrains+Mono:wght@400;500&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="index.html" class="nav__logo">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="4" stroke="#00FF88" stroke-width="1.5"/><path d="M14 5L23 14L14 23L5 14Z" stroke="#00FF88" stroke-width="1.5" fill="none"/></svg>
+        <span>Vyon Consulting</span>
+      </a>
+      <nav class="nav__links">
+        <a href="services.html" class="nav__link nav__link--active">Services</a>
+        <a href="sectors.html" class="nav__link">Sectors</a>
+        <a href="index.html#about" class="nav__link">About</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+      </nav>
+      <a href="contact.html" class="btn btn--outline nav__cta">Request Technical Assessment</a>
+      <button class="nav__burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobile-menu" hidden>
+      <a href="services.html">Services</a>
+      <a href="sectors.html">Sectors</a>
+      <a href="index.html#about">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="btn btn--primary">Request Assessment</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- PAGE HERO -->
+    <section class="page-hero" aria-labelledby="page-hero-title">
+      <div class="page-hero__bg" aria-hidden="true">
+        <div class="hero__grid"></div>
+        <div class="hero__glow hero__glow--1"></div>
+      </div>
+      <div class="container page-hero__content">
+        <p class="mono hero__eyebrow">⚡ TECHNICAL CAPABILITIES</p>
+        <h1 id="page-hero-title" class="page-hero__title">Engineering<br><span class="accent">Precision</span></h1>
+        <p class="page-hero__sub">Verified through high-fidelity solvers and senior methodology. Our simulation environments bridge the gap between conceptual design and physical reality.</p>
+      </div>
+    </section>
+
+    <!-- CORE COMPETENCIES -->
+    <section class="section" aria-labelledby="comp-title">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2 id="comp-title" class="section-title">Core Competencies</h2>
+            <p class="section-sub">Four specialized verticals driving next-generation engineering solutions across defense, energy, and infrastructure sectors.</p>
+          </div>
+          <div class="comp-meta mono">
+            <div><span class="dim">GLOBAL STANDARDS</span><br><strong>ISO 9001 : 2015</strong></div>
+            <div><span class="dim">SOLVER UPTIME</span><br><strong class="accent">99.98% High-Compute</strong></div>
+          </div>
+        </div>
+
+        <div class="services-grid">
+          <!-- CFD -->
+          <article class="service-card" id="cfd" aria-labelledby="cfd-title">
+            <div class="service-card__header">
+              <svg class="service-card__icon" width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true"><path d="M4 18c0-4 3-8 7-9M32 18c0 4-3 8-7 9M18 4c4 0 8 3 9 7M18 32c-4 0-8-3-9-7" stroke="#00FF88" stroke-width="1.5" stroke-linecap="round"/><circle cx="18" cy="18" r="4" fill="#00FF88" fill-opacity=".2" stroke="#00FF88" stroke-width="1.5"/></svg>
+              <div class="service-card__spark" aria-hidden="true"></div>
+            </div>
+            <h3 id="cfd-title" class="service-card__title">Fluid Dynamics (CFD)</h3>
+            <p class="service-card__desc">Harnessing massive parallelism for complex turbulent flow simulations, ensuring aerodynamic efficiency and thermal management.</p>
+            <div class="service-card__specs">
+              <div class="spec"><span class="mono dim">MESH CAPACITY</span><strong>500M+ Cells</strong></div>
+              <div class="spec"><span class="mono dim">SOLVER TYPE</span><strong class="accent">RANS / DES / LES</strong></div>
+            </div>
+            <div class="service-card__actions">
+              <a href="contact.html" class="link-arrow">Request Assessment →</a>
+              <a href="#" class="link-arrow dim">Verified Solver →</a>
+            </div>
+          </article>
+
+          <!-- FEA -->
+          <article class="service-card" id="fea" aria-labelledby="fea-title">
+            <div class="service-card__header">
+              <svg class="service-card__icon" width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true"><rect x="5" y="5" width="12" height="12" stroke="#00FF88" stroke-width="1.5"/><rect x="19" y="5" width="12" height="12" stroke="#00FF88" stroke-width="1.5"/><rect x="5" y="19" width="12" height="12" stroke="#00FF88" stroke-width="1.5"/><rect x="19" y="19" width="12" height="12" stroke="#00FF88" stroke-width="1.5"/></svg>
+            </div>
+            <h3 id="fea-title" class="service-card__title">Structural (FEA)</h3>
+            <p class="service-card__desc">Rigorous stress and strain analysis across non-linear materials to predict fatigue life and structural integrity under extreme loads.</p>
+            <div class="service-card__specs">
+              <div class="spec"><span class="mono dim">PRECISION</span><strong>Sub-micron</strong></div>
+              <div class="spec"><span class="mono dim">ANALYSES</span><strong class="accent">Static &amp; Dynamic</strong></div>
+            </div>
+            <div class="service-card__actions">
+              <a href="contact.html" class="link-arrow">Request Assessment →</a>
+              <a href="#" class="link-arrow dim">Verified Solver →</a>
+            </div>
+          </article>
+
+          <!-- Digital Twins -->
+          <article class="service-card" id="twins" aria-labelledby="twins-title">
+            <div class="service-card__header">
+              <svg class="service-card__icon" width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true"><circle cx="18" cy="18" r="12" stroke="#00FF88" stroke-width="1.5"/><circle cx="18" cy="18" r="5" fill="#00FF88" fill-opacity=".15" stroke="#00FF88" stroke-width="1.5"/><path d="M18 6v12M18 18l8.5 4.9" stroke="#00FF88" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3 id="twins-title" class="service-card__title">Digital Twins</h3>
+            <p class="service-card__desc">Real-time synchronization between physical assets and high-fidelity virtual models for predictive maintenance and telemetry.</p>
+            <div class="service-card__specs">
+              <div class="spec"><span class="mono dim">LATENCY</span><strong>&lt; 5ms</strong></div>
+              <div class="spec"><span class="mono dim">INTEGRATION</span><strong class="accent">MQTT / Kafka</strong></div>
+            </div>
+            <div class="service-card__actions">
+              <a href="contact.html" class="link-arrow">Request Assessment →</a>
+              <a href="#" class="link-arrow dim">Verified Solver →</a>
+            </div>
+          </article>
+
+          <!-- Marine -->
+          <article class="service-card" id="marine" aria-labelledby="marine-title">
+            <div class="service-card__header">
+              <svg class="service-card__icon" width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true"><path d="M18 6v6M10 24l8-12 8 12H10zM6 28c3 2 7 3 12 3s9-1 12-3" stroke="#00FF88" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 id="marine-title" class="service-card__title">Marine Engineering</h3>
+            <p class="service-card__desc">Specialized hydrodynamics for naval architecture, focusing on hull resistance reduction and advanced seakeeping performance.</p>
+            <div class="service-card__specs">
+              <div class="spec"><span class="mono dim">SIMULATION</span><strong>Open Water</strong></div>
+              <div class="spec"><span class="mono dim">ACCURACY</span><strong class="accent">±0.5% Error</strong></div>
+            </div>
+            <div class="service-card__actions">
+              <a href="contact.html" class="link-arrow">Request Assessment →</a>
+              <a href="#" class="link-arrow dim">Verified Solver →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TURNAROUND BANNER -->
+    <section class="turnaround section" aria-labelledby="ta-title">
+      <div class="container">
+        <div class="turnaround__inner">
+          <div class="turnaround__left">
+            <div class="turnaround__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 4v10l6 3" stroke="#00FF88" stroke-width="1.5" stroke-linecap="round"/><circle cx="14" cy="14" r="11" stroke="#00FF88" stroke-width="1.5"/></svg>
+            </div>
+            <h2 id="ta-title" class="turnaround__title">Accelerated Technical Turnaround</h2>
+            <p>Utilizing high-performance computing (HPC) clusters, we deliver complex simulation reports in up to <strong class="accent">40% less time</strong> than standard industry benchmarks without compromising mesh quality or solver convergence.</p>
+            <div class="turnaround__stats">
+              <div class="ta-stat"><span class="ta-stat__val">24hr</span><span class="mono dim">PRIORITY TRIAGE</span></div>
+              <div class="ta-stat"><span class="ta-stat__val">1.2TB</span><span class="mono dim">DAILY DATA THROUGHPUT</span></div>
+            </div>
+          </div>
+          <div class="turnaround__right">
+            <div class="ta-feature">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3L4 7v5c0 5 3.5 9.7 8 11 4.5-1.3 8-6 8-11V7z" stroke="#00FF88" stroke-width="1.5"/></svg>
+              <div>
+                <strong>Geometric Cleanup</strong>
+                <p class="dim">Automated CAD-to-Mesh optimization</p>
+              </div>
+            </div>
+            <div class="ta-feature">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12h16M4 6h10M4 18h13" stroke="#00FF88" stroke-width="1.5" stroke-linecap="round"/></svg>
+              <div>
+                <strong>Spectral Analysis</strong>
+                <p class="dim">Frequency-domain structural verification</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner" aria-labelledby="cta2-title">
+      <div class="container cta-banner__inner">
+        <div>
+          <h2 id="cta2-title" class="cta-banner__title">Ready for a Technical <span class="accent">Deep Dive?</span></h2>
+          <p>Download our full technical capabilities brochure and methodology PDF.</p>
+        </div>
+        <div class="cta-banner__btns">
+          <a href="#" class="btn btn--ghost">Download PDF Spec</a>
+          <a href="contact.html" class="btn btn--primary">Request Assessment</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="index.html" class="nav__logo">
+          <svg width="24" height="24" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="4" stroke="#00FF88" stroke-width="1.5"/><path d="M14 5L23 14L14 23L5 14Z" stroke="#00FF88" stroke-width="1.5" fill="none"/></svg>
+          <span>Vyon Consulting</span>
+        </a>
+        <p>Elite engineering firm specializing in high-fidelity CFD, FEA, and digital twin simulations for mission-critical sectors.</p>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__heading">SOLUTIONS</h3>
+        <a href="#cfd">Fluid Dynamics (CFD)</a>
+        <a href="#fea">Structural Analysis (FEA)</a>
+        <a href="#twins">Digital Twins</a>
+        <a href="#marine">Marine Engineering</a>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__heading">COMPANY</h3>
+        <a href="index.html#about">Methodology</a>
+        <a href="sectors.html">Sectors</a>
+        <a href="contact.html">Contact</a>
+        <a href="#">Technical PDF</a>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__heading">CONNECT</h3>
+        <div class="footer__socials">
+          <a href="#" aria-label="LinkedIn" class="social-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="4" stroke="currentColor" stroke-width="1.5"/><path d="M7 10v7M7 7v.5M12 17v-4c0-1.5 1-2 2-2s2 .5 2 2v4M12 10v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+          <a href="#" aria-label="Twitter" class="social-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 4l16 16M4 20L20 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+          <a href="contact.html" aria-label="Email" class="social-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="2" y="5" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M2 8l10 7 10-7" stroke="currentColor" stroke-width="1.5"/></svg></a>
+        </div>
+        <p class="mono dim footer__legal">Precision verified. Vyon Consulting © 2026</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

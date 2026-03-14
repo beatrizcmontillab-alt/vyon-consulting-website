@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vyon Consulting — Precision Engineering Elite</title>
+  <meta name="description" content="Elite engineering firm specializing in high-fidelity CFD, FEA, and digital twin simulations for mission-critical sectors.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;1,700&family=JetBrains+Mono:wght@400;500&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="index.html" class="nav__logo" aria-label="Vyon Consulting home">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+          <rect x="1" y="1" width="26" height="26" rx="4" stroke="#00FF88" stroke-width="1.5"/>
+          <path d="M14 5L23 14L14 23L5 14Z" stroke="#00FF88" stroke-width="1.5" fill="none"/>
+        </svg>
+        <span>Vyon Consulting</span>
+      </a>
+      <nav class="nav__links" aria-label="Main navigation">
+        <a href="services.html" class="nav__link">Services</a>
+        <a href="sectors.html" class="nav__link">Sectors</a>
+        <a href="#about" class="nav__link">About</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+      </nav>
+      <a href="contact.html" class="btn btn--outline nav__cta">Request Technical Assessment</a>
+      <button class="nav__burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobile-menu" hidden>
+      <a href="services.html">Services</a>
+      <a href="sectors.html">Sectors</a>
+      <a href="#about">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="btn btn--primary">Request Assessment</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__grid"></div>
+        <div class="hero__glow hero__glow--1"></div>
+        <div class="hero__glow hero__glow--2"></div>
+      </div>
+      <div class="hero__status" aria-label="System status">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span class="mono">SIMULATION ENGINE ACTIVE</span>
+        <span class="mono dim">SOLVER: VYON-CORE V4.2</span>
+        <span class="mono dim">LATENCY: 12MS</span>
+      </div>
+      <div class="container hero__content">
+        <p class="hero__eyebrow mono">— PRECISION ENGINEERING ELITE</p>
+        <h1 id="hero-title" class="hero__title">
+          SIMULATION<br>
+          AT THE SPEED<br>
+          <em>OF DECISION</em>
+        </h1>
+        <p class="hero__sub">Bridging advanced software with precise simulation capabilities to solve complex engineering challenges across naval, energy, and defense sectors.</p>
+        <div class="hero__actions">
+          <a href="contact.html" class="btn btn--primary">Request Technical Assessment</a>
+          <a href="services.html" class="btn btn--ghost">Explore Services</a>
+        </div>
+        <div class="hero__metrics" aria-label="Key performance metrics">
+          <div class="metric">
+            <span class="metric__val">1.3B</span>
+            <span class="metric__label mono">MESH RESOLUTION</span>
+          </div>
+          <div class="metric">
+            <span class="metric__val">&lt;0.2ms</span>
+            <span class="metric__label mono">SOLVER LATENCY</span>
+          </div>
+          <div class="metric">
+            <span class="metric__val accent">99.99%</span>
+            <span class="metric__label mono">VALIDATION</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ENGINEERING PILLARS -->
+    <section class="pillars section" aria-labelledby="pillars-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="pillars-title" class="section-title">ENGINEERING <span class="accent">PILLARS</span></h2>
+          <p class="section-sub">Our core technical capabilities leverage state-of-the-art physics engines and HPC clusters to deliver high-fidelity results.</p>
+          <a href="services.html" class="link-arrow mono">VIEW DETAILED SPECIFICATIONS →</a>
+        </div>
+        <div class="pillars__grid">
+          <div class="card card--featured">
+            <div class="card__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M4 16c0-4 3-7 7-8M28 16c0 4-3 7-7 8M16 4c4 0 7 3 8 7M16 28c-4 0-7-3-8-7" stroke="#00FF88" stroke-width="1.5" stroke-linecap="round"/><circle cx="16" cy="16" r="3" fill="#00FF88"/></svg>
+            </div>
+            <h3 class="card__title">Fluid Dynamics (CFD)</h3>
+            <p class="card__desc">Advanced aerodynamic and hydrodynamic modeling using high-order solvers for complex turbulence and multi-phase flows.</p>
+            <div class="card__tags">
+              <span class="tag">RANS/LES</span>
+              <span class="tag">Supersonic</span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="4" y="4" width="10" height="10" stroke="#00FF88" stroke-width="1.5"/><rect x="18" y="4" width="10" height="10" stroke="#00FF88" stroke-width="1.5"/><rect x="4" y="18" width="10" height="10" stroke="#00FF88" stroke-width="1.5"/><rect x="18" y="18" width="10" height="10" stroke="#00FF88" stroke-width="1.5"/></svg>
+            </div>
+            <h3 class="card__title">Structural (FEA)</h3>
+            <p class="card__desc">Non-linear static and dynamic analysis for material stress, vibration, and fatigue life prediction.</p>
+          </div>
+          <div class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="10" stroke="#00FF88" stroke-width="1.5"/><path d="M16 8v8l5 5" stroke="#00FF88" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="card__title">Marine Systems</h3>
+            <p class="card__desc">Specialized hull optimization and propulsion system simulations for elite naval architecture.</p>
+          </div>
+          <div class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M6 26V16M12 26V10M18 26V14M24 26V6" stroke="#00FF88" stroke-width="1.5" stroke-linecap="round"/><path d="M4 6l8 6 6-4 10 8" stroke="#00FF88" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="card__title">Digital Twins</h3>
+            <p class="card__desc">Real-time simulation feedback loops bridging physical sensors with virtual performance models.</p>
+          </div>
+          <div class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M16 4l4 8h8l-6.5 5 2.5 8L16 20l-8 5 2.5-8L4 12h8z" stroke="#00FF88" stroke-width="1.5" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="card__title">Advanced Optimization</h3>
+            <p class="card__desc">Generative design and topology optimization for next-generation component performance.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTOR AUTHORITY -->
+    <section class="sectors section" aria-labelledby="sectors-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="sectors-title" class="section-title">SECTOR <span class="accent">AUTHORITY</span></h2>
+          <p class="section-sub">Proven impact across specialized global industries.</p>
+        </div>
+        <div class="sectors__grid">
+          <a href="sectors.html#naval" class="sector-card sector-card--active">
+            <div class="sector-card__img sector-card__img--naval" role="img" aria-label="Naval vessel at sea"></div>
+            <div class="sector-card__body">
+              <p class="mono sector-card__label">SECTOR AUTHORITY</p>
+              <h3 class="sector-card__title">Naval &amp; Yachting Hydrodynamics</h3>
+              <a href="sectors.html#naval" class="link-arrow mono">VIEW CASE STUDY →</a>
+            </div>
+          </a>
+          <a href="sectors.html#renewable" class="sector-card">
+            <div class="sector-card__img sector-card__img--renewable" role="img" aria-label="Wind turbines renewable energy"></div>
+            <div class="sector-card__body">
+              <h3 class="sector-card__title">Renewable Energy Systems</h3>
+            </div>
+          </a>
+          <a href="sectors.html#defense" class="sector-card">
+            <div class="sector-card__img sector-card__img--defense" role="img" aria-label="Defense technology"></div>
+            <div class="sector-card__body">
+              <h3 class="sector-card__title">Defense &amp; Strategic Security</h3>
+            </div>
+          </a>
+          <a href="sectors.html#industrial" class="sector-card">
+            <div class="sector-card__img sector-card__img--industrial" role="img" aria-label="Industrial infrastructure pipes"></div>
+            <div class="sector-card__body">
+              <h3 class="sector-card__title">Industrial Infrastructure</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- DNA / ABOUT -->
+    <section class="dna section" id="about" aria-labelledby="dna-title">
+      <div class="container dna__layout">
+        <div class="dna__text">
+          <h2 id="dna-title" class="section-title">Our Engineering <span class="accent">DNA</span></h2>
+          <p class="dna__body">Vyon Consulting operates at the intersection of extreme mathematics and practical engineering. Our methodology is built on three unbreakable core tenets.</p>
+          <ul class="dna__tenets" role="list">
+            <li class="tenet">
+              <svg class="tenet__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10l4 4 8-8" stroke="#00FF88" stroke-width="1.5" stroke-linecap="round"/></svg>
+              <div>
+                <strong>Verified Accuracy</strong>
+                <p>Every simulation is benchmarked against physical testing data and industry-standard validation cases.</p>
+              </div>
+            </li>
+            <li class="tenet">
+              <svg class="tenet__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="2" y="6" width="16" height="11" rx="2" stroke="#00FF88" stroke-width="1.5"/><path d="M7 6V4a3 3 0 016 0v2" stroke="#00FF88" stroke-width="1.5"/></svg>
+              <div>
+                <strong>HPC Scalability</strong>
+                <p>We leverage petascale compute clusters to ensure even the most complex meshes are resolved in record time.</p>
+              </div>
+            </li>
+            <li class="tenet">
+              <svg class="tenet__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 2l7 4v5c0 4-3 7-7 8C6 18 3 15 3 11V6z" stroke="#00FF88" stroke-width="1.5"/></svg>
+              <div>
+                <strong>Secure IP Handling</strong>
+                <p>Military-grade data protection for sensitive defense and proprietary industrial projects.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="dna__stack" aria-label="Specialized software stack">
+          <p class="mono dna__stack-label">SPECIALIZED SOFTWARE STACK</p>
+          <div class="software-grid">
+            <span>ANSYS FLUENT</span><span>STAR-CCM+</span>
+            <span>OPENFOAM</span><span>ABAQUS</span>
+            <span>MATLAB</span><span>SIEMENS NX</span>
+            <span>RHINO 3D</span><span>NASTRAN</span>
+          </div>
+          <div class="cert-row mono">
+            <span class="cert-badge">ISO 9001</span>
+            <span class="cert-badge">ITAR</span>
+            <span class="cert-badge">CE</span>
+            <span class="dim">CERTIFIED SOLVER EXPERTS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="cta-banner" aria-labelledby="cta-title">
+      <div class="container cta-banner__inner">
+        <div>
+          <h2 id="cta-title" class="cta-banner__title">Ready for Technical <span class="accent">Validation?</span></h2>
+          <p>Partner with Vyon Consulting to eliminate engineering uncertainty through high-fidelity simulation.</p>
+        </div>
+        <a href="contact.html" class="btn btn--primary btn--lg">REQUEST ASSESSMENT</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="index.html" class="nav__logo">
+          <svg width="24" height="24" viewBox="0 0 28 28" fill="none" aria-hidden="true"><rect x="1" y="1" width="26" height="26" rx="4" stroke="#00FF88" stroke-width="1.5"/><path d="M14 5L23 14L14 23L5 14Z" stroke="#00FF88" stroke-width="1.5" fill="none"/></svg>
+          <span>Vyon Consulting</span>
+        </a>
+        <p>Elite engineering firm specializing in high-fidelity CFD, FEA, and digital twin simulations for mission-critical sectors.</p>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__heading">SOLUTIONS</h3>
+        <a href="services.html#cfd">Fluid Dynamics (CFD)</a>
+        <a href="services.html#fea">Structural Analysis (FEA)</a>
+        <a href="services.html#twins">Digital Twins</a>
+        <a href="services.html#marine">Marine Engineering</a>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__heading">COMPANY</h3>
+        <a href="#about">Methodology</a>
+        <a href="sectors.html">Sectors</a>
+        <a href="contact.html">Contact</a>
+        <a href="#">Technical PDF</a>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__heading">CONNECT</h3>
+        <div class="footer__socials">
+          <a href="#" aria-label="LinkedIn" class="social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="4" stroke="currentColor" stroke-width="1.5"/><path d="M7 10v7M7 7v.5M12 17v-4c0-1.5 1-2 2-2s2 .5 2 2v4M12 10v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </a>
+          <a href="#" aria-label="Twitter / X" class="social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 4l16 16M4 20L20 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </a>
+          <a href="contact.html" aria-label="Email" class="social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="2" y="5" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M2 8l10 7 10-7" stroke="currentColor" stroke-width="1.5"/></svg>
+          </a>
+        </div>
+        <p class="mono dim footer__legal">Precision verified. Vyon Consulting © 2026</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
