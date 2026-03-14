@@ -20,20 +20,19 @@
 
   if (burger && mobileMenu) {
     burger.addEventListener('click', () => {
-      const open = !mobileMenu.hidden;
-      mobileMenu.hidden = open;
-      burger.setAttribute('aria-expanded', String(!open));
-      // Animate burger to X
-      burger.classList.toggle('open', !open);
-    });
+  const open = mobileMenu.classList.contains('is-open');
+  mobileMenu.classList.toggle('is-open', !open);
+  burger.setAttribute('aria-expanded', String(!open));
+  burger.classList.toggle('open', !open);
+});
     // Close on nav link click
     mobileMenu.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        mobileMenu.hidden = true;
-        burger.setAttribute('aria-expanded', 'false');
-        burger.classList.remove('open');
-      });
-    });
+  link.addEventListener('click', () => {
+    mobileMenu.classList.remove('is-open');
+    burger.setAttribute('aria-expanded', 'false');
+    burger.classList.remove('open');
+  });
+});
   }
 
   /* ---- SECTOR TABS active state on scroll ---- */
