@@ -117,14 +117,23 @@
       submitBtn.textContent = 'Sending…';
       submitBtn.disabled = true;
 
-      setTimeout(() => {
-        form.reset();
-        if (document.getElementById('file-list')) document.getElementById('file-list').innerHTML = '';
-        formSuccess.hidden = false;
-        submitBtn.textContent = 'Request Technical Assessment';
-        submitBtn.disabled = false;
-        formSuccess.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-      }, 1200);
+      fetch(form.action, {
+  method: 'POST',
+  body: new FormData(form),
+  headers: { 'Accept': 'application/json' }
+})
+.then(res => {
+  if (res.ok) {
+    form.reset();
+    if (document.getElementById('file-list')) document.getElementById('file-list').innerHTML = '';
+    formSuccess.hidden = false;
+    formSuccess.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+})
+.finally(() => {
+  submitBtn.textContent = 'Request Technical Assessment';
+  submitBtn.disabled = false;
+});
     });
 
     // Clear error colour on input
