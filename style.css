@@ -108,10 +108,17 @@ input,textarea,select{font:inherit}
   display:none;flex-direction:column;gap:5px;padding:4px;margin-left:auto;
 }
 .nav__burger span{display:block;width:22px;height:2px;background:var(--text);transition:all .25s}
-.nav__mobile{
-  display:flex;flex-direction:column;gap:0;
-  background:var(--bg-2);border-top:1px solid var(--border);
-  padding:16px 20px 24px;
+.nav__mobile {
+  display: none;
+  flex-direction: column;
+  gap: 0;
+  background: var(--bg-2);
+  border-top: 1px solid var(--border);
+  padding: 16px 20px 24px;
+}
+
+.nav__mobile.is-open {
+  display: flex;
 }
 @media (min-width: 901px) {
   .nav__mobile {
