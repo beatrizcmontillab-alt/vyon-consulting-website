@@ -113,6 +113,11 @@ input,textarea,select{font:inherit}
   background:var(--bg-2);border-top:1px solid var(--border);
   padding:16px 20px 24px;
 }
+@media (min-width: 901px) {
+  .nav__mobile {
+    display: none !important;
+  }
+}
 .nav__mobile a{
   padding:12px 0;border-bottom:1px solid var(--border);
   font-family:var(--font-body);font-weight:500;
